@@ -1,1 +1,227 @@
-<h1> Hello HTML </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+  
+     <!-- this is Internal  CSS   -->
+    <style>
+
+        /* selector {
+
+            property1 : value1;
+            property2 : value2;
+        } */
+
+        div {
+            color: green;
+        }
+        .divtag {
+            text-align: center;
+            font-size: 30px;
+            margin: 50px;
+            padding: 20px;
+            border: solid 1px black;
+            color: white;
+            background-color: skyblue;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        #btn{
+            background-color: blue;
+            color:white ;
+        }
+        #btn:hover {
+            background-color: white;
+            color: blue;
+            cursor: pointer;
+        }
+        
+    </style>
+
+ <!-- this is Extenal CSS   ( MId prefence )-->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="https://google.co.in">
+        <button id="btn"> Go To Google</button>
+        Click here !!!
+    </a>
+
+    <div class="divtag">This is Div</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- // this is form  -->
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" autofocus required>
+        <br>
+
+        <textarea></textarea>
+        <br>
+
+        Gender:
+        <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+        <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+        <input type="radio" name="gender" id="other"> <label for="other">Other</label>
+
+        <br>
+        Hobbies:
+        <input type="checkbox" name="" id="cricket">  <label for="cricket">Cricket</label> 
+        <input type="checkbox" name="" id="football"><label for="football">Football</label>
+        <input type="checkbox" name="" id="hockey"> <label for="hockey">Hockey</label>
+        <br>
+
+        City :
+        <select name="" id="">
+            <option value="">Select Option</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="kolhapur">Kolhapur </option>
+        </select>
+
+
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<hr>
+    <!-- // this is Table -->
+    <table border="1">
+        <caption>Sample Table</caption>
+        <thead> 
+             <!-- table head -->
+            <th> Id</th>
+            <th>Name </th>
+        </thead>
+        <tbody>  
+            <!-- table body  -->
+            <tr>
+                <!-- table row  -->
+                <td rowspan="2">1</td>
+                <!-- table data -->
+                <td>Suraj</td>
+            </tr>
+
+            <tr>
+                <td >Pankaj</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>  
+            <!-- this is Table Footer  -->
+        <tr>
+            <td colspan="2">This is Footer</td>
+        </tr>
+        </tfoot>
+    </table>
+
+
+    <table border="1">
+        <thead>
+            <caption>t1</caption>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center" colspan="2">A</td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="2">B</td>
+            </tr>
+            <tr>
+                <td colspan="2">C</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<table border="1">
+    <thead>
+        <caption>t2</caption>
+    </thead>
+   <tbody>
+    <tr>
+        <td align="center" rowspan="1" colspan="3">A</td>
+    </tr>
+    <tr>
+        <td  rowspan="2">B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+    <tr> <td align="center" colspan="2">
+        E
+    </td></tr>
+
+    <tr>
+        <td>
+            <table border="1" style="background-color: aqua;">
+                <tr>
+                    <td style="background-color: brown;" rowspan="2">F</td>
+                    <td rowspan="2">G</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+   </tbody>
+</table>
+
+
+
+
+
+
+    <!-- <openingtag attr1="value1" attr2="value2">innerHTML</closingtag> -->
+
+
+        <!-- this is Inline CSS  ( high prefence )-->
+    <div style="color: red;"> This is statement from div tag</div>
+    <div>Statement 2</div>
+
+
+
+    <h1>1. Hello World</h1>
+    <h2>2. Hello World</h2>
+    <h3>3. Hello World</h3>
+    <h4>4. Hello World</h4>
+    <h5>5. Hello World</h5>
+    <h6>6. Hello World</h6>
+</body>
+
+</html>
